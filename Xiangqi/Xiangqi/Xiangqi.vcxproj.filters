@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\comun\glut.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\comun\Vector2D.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dominio\Tablero.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dominio\Pieza.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dominio\Soldado.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dominio\Intersecciones.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dominio\GenMovimientos.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dominio\Caballo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dominio\Elefante.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dominio\Paov.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dominio\Torre.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\comun\Circunferencia.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dominio\Consejero.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\comun\Vector2D.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dominio\Tablero.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Xiangqi\Xiangqi.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dominio\Pieza.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dominio\Soldado.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dominio\Intersecciones.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dominio\GenMovimientos.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dominio\Torre.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dominio\Elefante.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dominio\Caballo.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dominio\Paov.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dominio\Consejero.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

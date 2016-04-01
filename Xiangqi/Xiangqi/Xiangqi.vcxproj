@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DF203714-4EEC-4482-BF02-E3EB5A2A23AB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Xiangqi</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>C:\Users\ALCAMPO\Documents\Uni\3º\Informatica industrial\Xiangqi\Xiangqi\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Users\ALCAMPO\Documents\Uni\3º\Informatica industrial\Xiangqi\Xiangqi\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\ALCAMPO\Documents\Uni\3º\Informatica industrial\Xiangqi\Xiangqi\lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>C:\Users\ALCAMPO\Documents\Uni\3º\Informatica industrial\Xiangqi\Xiangqi\source;$(SourcePath)</SourcePath>
+    <OutDir>.\bin\</OutDir>
+    <IntDir>.\bin\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>.\bin\$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\comun\Circunferencia.h" />
+    <ClInclude Include="include\comun\glut.h" />
+    <ClInclude Include="include\comun\Vector2D.h" />
+    <ClInclude Include="include\dominio\Caballo.h" />
+    <ClInclude Include="include\dominio\Consejero.h" />
+    <ClInclude Include="include\dominio\Elefante.h" />
+    <ClInclude Include="include\dominio\GenMovimientos.h" />
+    <ClInclude Include="include\dominio\Intersecciones.h" />
+    <ClInclude Include="include\dominio\Paov.h" />
+    <ClInclude Include="include\dominio\Pieza.h" />
+    <ClInclude Include="include\dominio\Soldado.h" />
+    <ClInclude Include="include\dominio\Tablero.h" />
+    <ClInclude Include="include\dominio\Torre.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\comun\Vector2D.cpp" />
+    <ClCompile Include="source\dominio\Caballo.cpp" />
+    <ClCompile Include="source\dominio\Consejero.cpp" />
+    <ClCompile Include="source\dominio\Elefante.cpp" />
+    <ClCompile Include="source\dominio\GenMovimientos.cpp" />
+    <ClCompile Include="source\dominio\Intersecciones.cpp" />
+    <ClCompile Include="source\dominio\Paov.cpp" />
+    <ClCompile Include="source\dominio\Pieza.cpp" />
+    <ClCompile Include="source\dominio\Soldado.cpp" />
+    <ClCompile Include="source\dominio\Tablero.cpp" />
+    <ClCompile Include="source\dominio\Torre.cpp" />
+    <ClCompile Include="source\Xiangqi\Xiangqi.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
